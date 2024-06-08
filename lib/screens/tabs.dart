@@ -64,6 +64,7 @@ class _TabsScreenState extends State<TabsScreen> {
   }
 
   void _onSelectItem(String identifier) async {
+  
     Navigator.of(context).pop();
     if (identifier == 'filters') {
      final result = await Navigator.of(context).push<Map<Filter, bool>>(
